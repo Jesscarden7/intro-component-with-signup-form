@@ -1,0 +1,29 @@
+.MainWrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 98vw 100vh;
+}
+
+.RightWrapper {
+  width: 50%;
+  margin: auto;
+  height: 70%;
+}
+
+@media (max-width: 376px) {
+  .MainWrapper {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./assets/images/bg-intro-mobile.png");
+    padding: 0px 29px;
+  }
+
+  .RightWrapper {
+    width: 100%;
+  }
+}
