@@ -6,26 +6,50 @@
   margin-top: 20px;
   padding: 25px;
   box-shadow: 0px 6px hsl(249, 10%, 26%, 0.3);
-
 }
 
 .inputWrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .inputWrapper input {
   height: 45px;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 5px;
+  padding-left: 20px;
 }
 
 .inputWrapper input::placeholder {
-  padding-left: 20px;
   font-weight: bold;
   font-size: 11px;
   font-family: 'Poppins', sans-serif;
+}
+
+.inputWrapper input:focus {
+  outline-color: hsl(249, 10%, 26%) ;
+}
+
+.inputWrapper span {
+  color: hsl(0, 100%, 74%);
+  text-align: end;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.inputWrapper img {
+  width: 18px;
+  position: absolute;
+  bottom: 45px;
+  right: 20px;
+}
+
+.inputError {
+  border: 2px solid hsl(0, 100%, 74%) !important;
 }
 
 .formWrapper button {
@@ -41,6 +65,7 @@
   letter-spacing: 0.5px;
   margin: 20px 0 5px;
   box-shadow: 0px 3px hsl(154deg 56.53% 45.22%);
+  cursor: pointer;
 }
 
 .formWrapper .termsAndServices {

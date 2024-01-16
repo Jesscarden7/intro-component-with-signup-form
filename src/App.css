@@ -12,7 +12,6 @@
 .RightWrapper {
   width: 50%;
   margin: auto;
-  height: 70%;
 }
 
 @media (max-width: 376px) {
@@ -21,6 +20,7 @@
     flex-direction: column;
     background-image: url("./assets/images/bg-intro-mobile.png");
     padding: 0px 29px;
+    overflow-y: scroll;
   }
 
   .RightWrapper {
